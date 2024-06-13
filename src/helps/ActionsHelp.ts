@@ -1,13 +1,20 @@
-export function sortAscending(set: number[]): number[] {
-    const sortedArray = [...set];
-    return sortedArray.sort((a, b) => a - b);
+export function sortAscending(...arrays: number[][]): number[] {
+  const mergedArray = arrays.reduce((merged, currentArray) => {
+    return merged.concat(currentArray);
+  }, []);
+
+  return mergedArray.sort((a, b) => a - b);
 }
 
-export function sortDescending(set: number[]): number[] {
-    const sortedArray = [...set];
-    return sortedArray.sort((a, b) => b - a);
+export function sortDescending(...arrays: number[][]): number[] {
+  const mergedArray = arrays.reduce((merged, currentArray) => {
+    return merged.concat(currentArray);
+  }, []);
+
+  return mergedArray.sort((a, b) => b - a);
 }
 
-export function sumArray(set: number[]): number {
-    return set.reduce((sum, currentValue) => sum + currentValue, 0);
+export function sumArray(...arrays: number[][]): number {
+  return arrays.flat().reduce((sum, currentValue) => sum + currentValue, 0);
 }
+

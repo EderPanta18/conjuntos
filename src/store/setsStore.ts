@@ -7,7 +7,7 @@ interface setState{
     deleteSet: (index: number) => void;
 }
 
-export const useSetStore = create<setState>(set => ({
+export const useSetsStore = create<setState>(set => ({
     sets: [],
     addSet: (newSet) => {
         const filteredSet = [...new Set(newSet)];
