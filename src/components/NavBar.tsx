@@ -6,11 +6,11 @@ const NavBar: React.FC = () => {
     <>
       <nav className="flex justify-center gap-14 my-3 mx-10 text-greenCustom font-mono">
         <NavLinkWithBorder exact to="/">
-          Home
+          Inicio
         </NavLinkWithBorder>
-        <NavLinkWithBorder to="/actions">Actions</NavLinkWithBorder>
-        <NavLinkWithBorder to="/operations">Operations</NavLinkWithBorder>
-        <NavLinkWithBorder to="/propertys">Propertys</NavLinkWithBorder>
+        <NavLinkWithBorder to="/actions">Acciones</NavLinkWithBorder>
+        <NavLinkWithBorder to="/operations">Operaciones</NavLinkWithBorder>
+        <NavLinkWithBorder to="/propertys">Proppiedades</NavLinkWithBorder>
       </nav>
       <Outlet />
     </>
