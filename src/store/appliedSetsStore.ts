@@ -8,9 +8,9 @@ interface AppliedSetState {
   setDSymmetrical: { set1: number[], set2: number[] };
   setSetAction: (action: number[]) => void;
   setSetJoin: (join: number[][]) => void;
-  setSetIntersection: (intersection: { set1: number[], set2: number[] }) => void;
-  setSetDifference: (difference: { set1: number[], set2: number[] }) => void;
-  setSetDSymmetrical: (dsymmetrical: { set1: number[], set2: number[] }) => void;
+  setSetIntersection: (intersection: { set1: number[]; set2: number[] }) => void;
+  setSetDifference: (difference: { set1: number[]; set2: number[] }) => void;
+  setSetDSymmetrical: (dsymmetrical: { set1: number[]; set2: number[] }) => void;
 }
 
 export const useAppliedSetsStore = create<AppliedSetState>((set) => ({

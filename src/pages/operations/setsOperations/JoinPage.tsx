@@ -5,7 +5,7 @@ import { useSetsStore } from "../../../store/setsStore";
 import { sumArray } from "../../../helps/ActionsHelp";
 import { mergeArrays } from "../../../helps/OperationsHelp";
 
-export default function JoinOperationPage() {
+export default function JoinPage() {
   const { sets } = useSetsStore();
   const { setJoin, setSetJoin } = useAppliedSetsStore();
   const [selectedIndices, setSelectedIndices] = useState<number[]>(() => {
@@ -69,7 +69,7 @@ export default function JoinOperationPage() {
                 <h2>Suma de los elementos: {sumArray(...setJoin)}</h2>
                 <RenderSet
                   set={mergeArrays(...setJoin)}
-                  title={"Unión de los conjuntos :"}
+                  title={"Unión de los conjuntos"}
                 />
               </div>
             ) : (

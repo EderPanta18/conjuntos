@@ -1,10 +1,10 @@
 import NavBarOperation from "../../components/NavBarOperations";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import {
-  JoinOperationPage,
-  IntersectionOperationPage,
-  DifferenceOperationPage,
-  DSymmetricalOperationPage,
+  JoinPage,
+  IntersectionPage,
+  DifferencePage,
+  DSymmetricalPage,
 } from "./setsOperations";
 
 export default function SetsOperationsPage() {
@@ -13,10 +13,10 @@ export default function SetsOperationsPage() {
       <Routes>
         <Route path="/" element={<NavBarOperation />}>
           <Route index element={<HomeOperation />} />
-          <Route path="join" element={<JoinOperationPage />} />
-          <Route path="intersection" element={<IntersectionOperationPage />} />
-          <Route path="difference" element={<DifferenceOperationPage />} />
-          <Route path="dsymmetrical" element={<DSymmetricalOperationPage />} />
+          <Route path="join" element={<JoinPage />} />
+          <Route path="intersection" element={<IntersectionPage />} />
+          <Route path="difference" element={<DifferencePage />} />
+          <Route path="dsymmetrical" element={<DSymmetricalPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

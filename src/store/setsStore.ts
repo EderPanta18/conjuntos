@@ -20,6 +20,6 @@ export const useSetsStore = create<setState>(set => ({
         })),
     deleteSet: (index) => 
         set(state => ({
-            sets: state.sets.filter((_,i) => i!==index)
+            sets: state.sets.filter((_,i) => (i!==index))
         }))
 }))

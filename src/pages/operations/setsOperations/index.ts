@@ -1,6 +1,5 @@
-export {default as JoinOperationPage} from "./JoinOperationPage";
-export {default as IntersectionOperationPage} from "./IntersectionOperationPage";
-export {default as DifferenceOperationPage} from "./DifferenceOperationPage";
-export {default as DSymmetricalOperationPage} from "./DSymmetricalOperationPage";
-export {default as HomeOperationPage} from "./HomeOperationPage";
+export {default as JoinPage} from "./JoinPage";
+export {default as IntersectionPage} from "./IntersectionPage";
+export {default as DifferencePage} from "./DifferencePage";
+export {default as DSymmetricalPage} from "./DSymmetricalPage";
 
